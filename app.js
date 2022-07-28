@@ -17,7 +17,7 @@ app.use('/', routes)
 
 const listenerCallback = () => {
     init()
-    console.log(`Server is listening on https://node-js-wa-blast.herokuapp.com`)
+    console.log(`Server is listening on http://${host ? host : 'localhost'}:${port}`)
 }
 
 if (host) {
