@@ -16,9 +16,7 @@
     "url": "https://github.com/ookamiiixd/baileys-api/issues"
   },
   "homepage": "https://github.com/ookamiiixd/baileys-api#readme",
-  "engines": {
-    "node": ">=14.5.0"
-  },
+
   "dependencies": {
     "@adiwajshing/baileys": "^4.2.0",
     "@adiwajshing/keyed-db": "^0.2.4",
