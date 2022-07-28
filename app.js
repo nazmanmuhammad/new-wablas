@@ -9,7 +9,7 @@ const app = express()
 
 const host = process.env.HOST || undefined
 const port = process.env.PORT ?? 8000
-console.log(port)
+console.log(process.env.PORT)
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
