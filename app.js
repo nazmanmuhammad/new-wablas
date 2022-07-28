@@ -8,7 +8,8 @@ import cors from 'cors'
 const app = express()
 
 const host = process.env.HOST || undefined
-const port = parseInt(process.env.PORT || 8000)
+const port = process.env.PORT ?? 8000
+console.log(port)
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
