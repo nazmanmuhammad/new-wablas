@@ -8,7 +8,7 @@ import cors from 'cors'
 const app = express()
 
 const host = process.env.HOST || undefined
-const port = process.env.PORT ?? 36904
+const port = process.env.PORT ?? 8000
 console.log(process.env.PORT)
 
 app.use(cors())
