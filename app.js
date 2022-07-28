@@ -17,7 +17,7 @@ app.use('/', routes)
 
 const listenerCallback = () => {
     init()
-    console.log(`Listening on ${ port }`)
+    console.log(`Listening on ${ process.env.PORT }`)
 }
 
 if (host) {
