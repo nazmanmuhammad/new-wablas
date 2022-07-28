@@ -8,7 +8,7 @@ import cors from 'cors'
 const app = express()
 
 const host = process.env.HOST || undefined
-const port = process.env.PORT ?? 8000
+const port = process.env.PORT || 3000;
 console.log(process.env.PORT)
 
 app.use(cors())
@@ -18,13 +18,13 @@ app.use('/', routes)
 
 const listenerCallback = () => {
     init()
-    console.log(`Server is listening on http://${host ? host : 'localhost'}:${port}`)
+    console.log(`Server is listening on port 3000`)
 }
 
 if (host) {
-    app.listen(8000, host, listenerCallback)
+    app.listen(port, "0.0.0.0", listenerCallback)
 } else {
-    app.listen(8000, listenerCallback)
+    app.listen(port, listenerCallback)
 }
 
 nodeCleanup(cleanup)
