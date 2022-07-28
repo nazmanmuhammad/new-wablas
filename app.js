@@ -21,9 +21,9 @@ const listenerCallback = () => {
 }
 
 if (host) {
-    app.listen(process.env.PORT || 3000, host, listenerCallback)
+    app.listen(port, host, listenerCallback)
 } else {
-    app.listen(process.env.PORT || 3000, listenerCallback)
+    app.listen(port, listenerCallback)
 }
 
 nodeCleanup(cleanup)
