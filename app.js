@@ -17,7 +17,7 @@ app.use('/', routes)
 
 const listenerCallback = () => {
     init()
-    console.log(`Server is listening on https://my-backend-wablast.herokuapp.com`)
+    console.log(`Server is listening on http://${host ? host : 'localhost'}:8000`)
 }
 
 if (host) {
