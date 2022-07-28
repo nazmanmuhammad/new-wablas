@@ -5,10 +5,11 @@ import routes from './routes.js'
 import { init, cleanup } from './whatsapp.js'
 import cors from 'cors'
 
+const express = required('express')
 const app = express()
 
-const host = env.HOST || undefined
-const port = parseInt(env.PORT ?? 8000)
+const host = process.env.HOST || undefined
+const port = parseInt(process.env.PORT ?? 8000)
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
