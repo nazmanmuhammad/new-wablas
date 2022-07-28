@@ -7,8 +7,8 @@ import cors from 'cors'
 
 const app = express()
 
-const host = process.env.HOST || undefined
-const port = parseInt(process.env.PORT ?? 8000)
+const host = baileys-api.env.HOST || undefined
+const port = parseInt(baileys-api.env.PORT ?? 8000)
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
