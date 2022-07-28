@@ -17,7 +17,7 @@ app.use('/', routes)
 
 const listenerCallback = () => {
     init()
-    console.log(`Server is listening on Listening on ${ process.env.PORT ?? 8000 }`)
+    console.log(`Server is listening on http://${host ? host : 'localhost'}:${process.env.PORT}`)
 }
 
 if (host) {
