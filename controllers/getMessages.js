@@ -6,7 +6,7 @@ const getMessages = async (req, res) => {
 
     /* eslint-disable camelcase */
     const { jid } = req.params
-    const { limit = 25, cursor_id = null, cursor_fromMe = null } = req.query
+    const { limit = 100, cursor_id = null, cursor_fromMe = null } = req.query
 
     const cursor = {}
 
