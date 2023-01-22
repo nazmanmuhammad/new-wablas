@@ -4,9 +4,6 @@
   "private": true,
   "main": "app.js",
   "type": "module",
-  "scripts": {
-    "start": "node app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ookamiiixd/baileys-api.git"
